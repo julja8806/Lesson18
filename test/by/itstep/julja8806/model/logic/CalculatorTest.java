@@ -2,7 +2,8 @@ package by.itstep.julja8806.model.logic;
 
 
 import org.junit.Test;
-import org.junit.Assert.*;
+import static org.junit.Assert.*;
+
 public class CalculatorTest {
 
     @Test
@@ -29,7 +30,7 @@ public class CalculatorTest {
         int actual = Calculator.sub(a, b);
 
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
 
@@ -43,7 +44,7 @@ public class CalculatorTest {
         int actual = Calculator.mul(a, b);
 
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
 
@@ -57,7 +58,7 @@ public class CalculatorTest {
         int actual = Calculator.div(a, b);
 
         if (expected != actual) {
-            Assert.assertEquals(expected, actual);
+            assertEquals(expected, actual);
         }
     }
 }
