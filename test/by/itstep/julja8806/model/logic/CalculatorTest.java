@@ -71,4 +71,16 @@ public class CalculatorTest {
 
 
         }
+    @Test(timeout = 1000)
+    public void testMulPower() {
+
+        int a = 10;
+        int b = 3;
+
+
+         Calculator.mul(a, b);
+
+
+
+    }
     }
