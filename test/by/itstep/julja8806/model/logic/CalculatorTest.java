@@ -57,8 +57,18 @@ public class CalculatorTest {
 
         int actual = Calculator.div(a, b);
 
-        if (expected != actual) {
+
             assertEquals(expected, actual);
         }
+
+        @Test(expected = ArithmeticException.class)
+        public void testDivByZero() {
+
+            int a = 10;
+            int b = 0;
+
+            Calculator.div(a, b);
+
+
+        }
     }
-}
